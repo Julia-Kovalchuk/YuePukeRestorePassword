@@ -1,0 +1,82 @@
+body {
+    background: #000;
+    box-sizing: border-box;
+    font-family: "Arial MT", sans-serif;
+}
+
+@font-face {
+    font-family: "Arial MT";
+    src: url("../fonts/arialmt.ttf");
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-restore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form-restore-logo {
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+.form-restore-input {
+    width: 283px;
+    height: 27px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-restore-button {
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 9px 40px;
+    border: 0px;
+    background: linear-gradient(to bottom, #525252 0%, #333333 30%);
+}
+
+.form-restore-button:active {
+    background: #6e6e6e;
+}
+
+dd {
+    margin-left: 0;
+}
+.form-restore-password-incorrect {
+    color: #ff3333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0 0 15px 0;
+}
+
+.form-restore-error {
+    color: #ff3333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0;
+}
+
+.form-restore-success {
+    color: #66cc66;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0;
+}
