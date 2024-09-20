@@ -4,6 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
     <!--<base href="https://10707.pokerserversoftware.com/userservice/">-->
     <base href=".">
     <title></title>
@@ -11,6 +12,9 @@
     <link href="./files/nihilo.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./files/common.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./files/restorepage.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="./files/dojo.js" djconfig="parseOnLoad:true">
     </script>
     <script type="files/throbber.js"></script>
@@ -3328,23 +3332,27 @@
         <form action="https://10707.pokerserversoftware.com/userservice/" enctype="application/x-www-form-urlencoded" method="post">
             <div class="form">
                 <div class="form-restore">
-                    <div class="form-restore-logo">
+                    <div class="form-restore-header">
+                        <div class="form-restore-title">Restore password</div>
                     </div>
+                    <div class="form-restore-logo"></div>
+                    <div class="form-restore-content">
+                        <div class="form-restore-description">Enter a new password below to change your password</div>
 
-                    <dd id="password-element">
-                        <input type="password" name="password" id="password" value="" placeholder="Password" class="form-restore-input">
-                    </dd>
-                    <div class="form-restore-password-incorrect">
+                        <dd id="password-element" class="input-field">
+                            <input type="password" name="password" id="password" value="" placeholder="New password (8-16 characters)" class="form-restore-input">
+                        </dd>
+                        <div class="form-restore-password-incorrect">
+                        </div>
+                        <dd id="verify_password-element" class="input-field">
+                            <input type="password" name="verify_password" id="verify_password" value="" placeholder="Confirm new password" class="form-restore-input">
+                        </dd>
+                        <div class="form-restore-password-incorrect">
+                        </div>
+                        <dd id="submit-element">
+                            <input type="submit" name="submit" id="submit" value="Reset password" class="form-restore-button">
+                        </dd>
                     </div>
-                    <dd id="verify_password-element">
-                        <input type="password" name="verify_password" id="verify_password" value="" placeholder="Verify password" class="form-restore-input">
-                    </dd>
-                    <div class="form-restore-password-incorrect">
-                    </div>
-                    <dt id="submit-label">&nbsp;</dt>
-                    <dd id="submit-element">
-                        <input type="submit" name="submit" id="submit" value="Restore" class="form-restore-button">
-                    </dd>
                 </div>
             </div>
         </form>
